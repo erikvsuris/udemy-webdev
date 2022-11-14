@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+:root {
+    --unsel: #9c0933;
+    --selec: #DE003E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+header {
+    height: 233px;
+    background: #284974 url(imagens/fundo.png) repeat-x;
+}
+
+#container {
+    margin: 0 auto;
+    width: 750px;
+    border: 1px solid red;
+}
+
+
+#mapa {
+    width: 176px;
+    height: 179px;
+    background: url(imagens/detalhe-topo.png) no-repeat right top;
+    background-attachment: scroll;
+}
+
+#logo {
+    width: 152px;
+    height: 66px;
+    background: url(imagens/logo.png) no-repeat;
+}
+
+header nav {
+    margin-top: -60px;
+    margin-left: 250px;
+}
+
+header a {
+    padding: 10px;
+    background-color: var(--unsel);
+    text-decoration: none;
+    color: white;
+}
+
+header a:hover {
+    background-color: var(--selec);
+    transition: 0.3s;
+}

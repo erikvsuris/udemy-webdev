@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    background: #8316ad url(imagens/fundo.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+}
+
+main {
+    margin: 0 auto;
+    margin-top: 20vh;
+    width: 500px;
+    height: 350px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.3);
+    text-align: center;
+}
+
+img#perfil {
+    transform: translate(0,-50%);
+}
+
+input {
+    height: 30px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: none;
+    font-size: 20px;
+}
+
+.email, .senha {
+    width: 300px;
+    padding-left: 40px;
+}
+
+input.email {
+    background: #ffffff url(imagens/icone-usuario.png) no-repeat;
+    background-position: 10px;
+}
+
+input.senha {
+    background: #ffffff url(imagens/icone-cadeado.png) no-repeat;
+    background-position: 10px;
+}
+
+#log {
+    width: 300px;
+    height: 40px;
+
+    background: -webkit-linear-gradient(to top, #ff8800, #ffa600);
+    background: -moz-linear-gradient(to top, #ff8800, #ffa600);
+    background: -o-linear-gradient(to top, #ff8800, #ffa600);
+    background: linear-gradient(to top, #ff8800, #ffa600);
+
+    border: 2px solid #f38200;
+    font-weight: bold;
+    color: white;
+}

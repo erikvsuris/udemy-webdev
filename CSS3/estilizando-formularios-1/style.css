@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 20px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+h1 {
+    margin: 20px;
+    font-size: 3em;
+}
+
+fieldset {
+    padding: 20px;
+    border: 1px solid lightgray;
+}
+
+input, textarea {
+    padding: 5px;
+    border: 1px solid lightgray;
+}
+
+legend {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+label {
+    font-size: 1.2em;
+    font-weight: bold;
+}
