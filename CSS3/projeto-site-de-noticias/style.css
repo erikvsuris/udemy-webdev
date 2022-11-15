@@ -1,10 +1,5 @@
 @charset "UTF-8";
 
-:root {
-    --unsel: #9c0933;
-    --selec: #DE003E;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -12,46 +7,98 @@
 
 body {
     font-family: 'Trebuchet MS', Arial, sans-serif;
+    background: url(imagens/fundo.png) repeat-x;
 }
 
 header {
-    height: 233px;
-    background: #284974 url(imagens/fundo.png) repeat-x;
-}
-
-#container {
-    margin: 0 auto;
     width: 750px;
-    border: 1px solid red;
+    margin: 0 auto;
 }
 
-
-#mapa {
-    width: 176px;
-    height: 179px;
+#topo {
+    height: 150px;
+    padding-top: 25px;
     background: url(imagens/detalhe-topo.png) no-repeat right top;
-    background-attachment: scroll;
 }
 
-#logo {
+img#logo {
     width: 152px;
     height: 66px;
-    background: url(imagens/logo.png) no-repeat;
 }
 
-header nav {
-    margin-top: -60px;
-    margin-left: 250px;
+ul {
+    list-style: none;
 }
 
-header a {
-    padding: 10px;
-    background-color: var(--unsel);
+a {
     text-decoration: none;
+}
+
+nav ul {
+    margin-top: -50px;
+    background-color: #b10333;
+    float: left;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul a {
+    display: block;
+    padding: 0.5em 1.5em;
+    background: url(imagens/divisor.png) no-repeat left center;
+    font-size: 0.9em;
+    line-height: 2.1em;
     color: white;
 }
 
-header a:hover {
-    background-color: var(--selec);
-    transition: 0.3s;
+nav a.first {
+    background: none;
+}
+
+nav ul a:hover {
+    color: #69001d;
+}
+
+body.home a#home, body.brasil a#brasil, body.inter a#inter, body.eco a#eco, body.saude a#saude, body.ciencia a#ciencia, body.fotos a#fotos {
+    background-color: #de003e;
+    cursor: text;
+}
+
+main {
+    width: 750px;
+    margin: 0 auto;
+    margin-top: 60px;
+    background-color: #f5f5f5;
+}
+
+main #prim {
+    width: 270px;
+    float: left;
+    margin: 0 0 20px 195px;
+}
+
+main #secun {
+    width: 270px;
+    float: left;
+    margin: 0 0 20px 15px;
+}
+
+main aside {
+    width: 180px;
+    float: left;
+    margin: 0 0 20px -750px;
+}
+
+footer {
+    clear: both;
+    padding: 20px;
+    background-color: #294c71;
+}
+
+footer p {
+    width: 750px;
+    margin: 0 auto;
+    color: white;
 }
