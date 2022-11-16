@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    padding: 10px;
+}
+
+p {
+    padding: 10px;
+    text-align: justify;
+}
+
+
+#grad {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    background: radial-gradient(rgb(47, 3, 194), rgb(148, 51, 212));
+}
+
+
+#cam {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    background: url(camera.png);
+}
+
+
+#cam h1, #cam p {
+    background-color: rgba(255, 255, 255, 0.8);
+}
