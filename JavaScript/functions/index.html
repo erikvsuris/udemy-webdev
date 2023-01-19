@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+</head>
+<body>
+    <h1>Introdução</h1>
+    <script>
+        function calcularAreaTerreno(l, c) {
+            var a = l * c;
+
+            return a;
+        }
+
+        var largura = Number(prompt('Digite a largura do seu terreno:'));
+        var comprimento = Number(prompt('Digite o comprimento do seu terreno:'));
+        var area = calcularAreaTerreno(largura, comprimento);
+
+        document.write(`Um terreno possui ${area} m².`);
+
+    </script>
+</body>
+</html>
