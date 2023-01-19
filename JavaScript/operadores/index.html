@@ -7,28 +7,32 @@
     <title>Operadores</title>
 </head>
 <body>
-    <h1>Operadores</h1>
-    <h2>Operadores de Atribuição</h2>
-        <p>
-            Atribuição Simples: <code>var x = y</code>
-        </p>
-        <p>
-            Atribuição Composta: <br>
-            <ul>
-                <li>Adição: <code>var x += y</code></li>
-                <li>Subtração: <code>var x -= y</code></li>
-                <li>Multiplicação: <code>var x *= y</code></li>
-                <li>Divisão: <code>var x /= y</code></li>
-                <li>Resto: <code>var x %= y</code></li>
-                <li>Exponenciação: <code>x **= y</code></li>
-            </ul>
-        </p>
-    <h2>Operadores Aritméticos</h2>
-        <script>
-            document.write()
-        </script>
-    <h2>Operadores Relacionais</h2>
-    <h2>Operadores Lógicos</h2>
-    <h2>Operadores Ternários</h2>
+    <h1>Exercício de Fixação</h1>
+    <script>
+        var nome = prompt('Olá, tudo bem? Me diga se nome:');
+        var altura = Number(prompt('Qual a sua altura em centímetros?'));
+        var peso = Number(prompt('Qual o seu peso em quilogramas?'));
+
+        altura /= 100;
+        var m = peso / (altura**2)
+
+        var classificacao;
+
+        if (m < 18.5) {
+            classificacao = 'Abaixo do Peso'
+        } else if (m >= 18.5 && m < 25) {
+            classificacao = 'Peso Ideal'
+        } else if (m >= 25 && m < 30) {
+            classificacao = 'Levemente Acima do Peso'
+        } else if (m >= 35 && m < 35) {
+            classificacao = 'Obesidade Grau I'
+        } else if (m >= 35 && m < 40) {
+            classificacao = 'Obesidade Grau II'
+        } else if (m >= 40) {
+            classificacao = 'Obesidade Grau III'
+        }
+
+        document.write(`${nome} possui índice de massa corporal igual a ${m.toFixed(2)}, sendo classificado como ${classificacao}.`);
+    </script>
 </body>
 </html>
