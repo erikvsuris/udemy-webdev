@@ -10,12 +10,57 @@
     <h1>Funções Nativas para Manipular Datas</h1>
     <script>
 
-        //Manipular Datas
-        var data = new Date();
+        //Manipular datas
+        var data = new Date()
 
-        document.write(data.getDay());
-        document.write('<br>');
-        document.write(data.getDate() + '/' + (data.getMonth() + 1) + '/' + data.getFullYear());
+        document.write('<hr>')
+        document.write(data.getDay())
+        document.write('<br>')
+        document.write(data.getDate() + '/' + (data.getMonth() + 1) + '/' + data.getFullYear())
+        document.write('<hr>')
+
+        document.write('<br><br>')
+
+        //Data Atual
+        document.write(data.toString())
+
+        //Adicionar e remover dias
+        document.write('<h3>Adicionar e Remover Dias</h3>')
+        data.setDate(data.getDate() + 720)
+        document.write(data.toString())
+        document.write('<hr>')
+
+        //Adicionar e remover meses
+        document.write('<h3>Adicionar e Remover Meses</h3>')
+        data.setMonth(data.getMonth() - 48)
+        document.write(data.toString())
+        document.write('<hr>')
+
+        //Adicionar e remover anos
+        document.write('<h3>Adicionar e Remover Anos</h3>')
+        data.setFullYear(data.getFullYear() + 9)
+        document.write(data.toString())
+        document.write('<hr>')
+
+        //Calcular datas
+        document.write('<h3>Calcular datas</h3>')
+
+        //15/01/2008
+        var data1 = new Date(2008, 0, 15)
+
+        //23/02/2017
+        var data2 = new Date(2017, 1, 23)
+
+        document.write(data1.getTime())
+        document.write('<hr>')
+        document.write(data2.getTime())
+        document.write('<hr>')
+
+        var data_dif = data2.getTime() - data1.getTime()
+
+        data_dif /= (1000*60*60*24)
+
+        document.write(Math.round(data_dif) + ' Dias')
 
     </script>
 </body>
