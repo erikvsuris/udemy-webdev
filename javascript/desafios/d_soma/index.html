@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+</head>
+<body>
+    <h1>Desafio da Soma</h1>
+    <script>
+        //Entrada do primeiro número
+        var num1 = Number(prompt('Informe o primeiro número:'))
+        //Entrada da operação de SOMA ou SUBTRAÇÃO
+        var operacao = prompt('Informe a operação:')
+        //Entrada do segundo número
+        var num2 = Number(prompt('Informe o segundo número:'))
+        //Condicional da operação
+        function calc(num1, num2, operacao) {
+            var resultado = 0;
+            if (operacao == 'soma') {
+                resultado = num1 + num2
+            } else if (operacao == 'subtração') {
+                resultado = num1 - num2
+            }
+
+            return resultado
+        }
+
+        document.write('O resultado é ' + calc(num1, num2, operacao))
+    </script>
+</body>
+</html>
