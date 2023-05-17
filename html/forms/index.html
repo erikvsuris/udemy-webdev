@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h2>Já é cadastrado?</h2>
+    <form> <!-- action="form.php" method="POST" -->
+        <p>
+            Usuário:<input type="text" name="nome">
+        </p>
+        <p>
+            Senha:<input type="password" name="senha">
+        </p>
+        <input type="submit" value="Login">
+    </form>
+
+    <h2>Ainda não tem cadastro?</h2>
+    <form>
+        <p>
+            Nome:
+            <input type="text" name="nome">
+        </p>
+        <p>Sexo:</p>
+        <p>
+            <input type="radio" name="sexo" value="m" checked>Masculino
+            <input type="radio" name="sexo" value="f">Feminino
+        </p>
+        <p>
+            Interesses: <br>
+            <input type="checkbox" name="interesses" value="html"> HTML <br>
+            <input type="checkbox" name="interesses" value="html"> CSS <br>
+            <input type="checkbox" name="interesses" value="html"> JavaScript <br>
+            <input type="checkbox" name="interesses" value="html"> React
+        </p>
+        <p>
+            Estado <br>
+            <select name="estado">
+                <option value="pr">PR</option>
+                <option value="sc">SC</option>
+                <option value="rs">RS</option>
+            </select>
+        </p>
+        <p>
+            Observações: <br>
+            <textarea></textarea> <br>
+        </p>
+        <p>
+            Senha:
+            <input type="password" name="senha_i">
+            <br>
+            Digite novamente:
+            <input type="password" name="senha_f">
+        </p>
+        <input type="submit" value="Cadastro">
+    </form>
+</body>
+</html>
