@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Posicionamentos</title>
     <style>
+        body {
+            background: darkslategrey;
+            font-family: Arial, Helvetica, sans-serif;
+
+            height: 2000px;
+        }
+        h1 {
+            color: white;
+        }
         #static {
             background: lightsalmon;
 
@@ -19,11 +28,32 @@
             background: lightseagreen;
 
             position: relative;
-            top: -20px;
+            top: 50px;
             left: 50px;
 
             width: 300px;
             margin: 10px;
+            padding: 10px;
+        }
+        #absolute {
+            background: lightcoral;
+
+            position: absolute;
+            bottom: 300px;
+            left: 400px;
+
+            width: 300px;
+            margin: 10px;
+            padding: 10px;
+        }
+        #fixed {
+            background: lightpink;
+
+            position: fixed;
+            bottom: 0px;
+            right: 0px;
+
+            width: 300px;
             padding: 10px;
         }
     </style>
@@ -33,14 +63,26 @@
     <div id="static">
         <h2>Static</h2>
         <p>
-            Posicionamento padrão dos elementos.
+            Posição padrão dos elementos.
         </p>
     </div>
     <div id="relative">
         <h2>Relative</h2>
         <p>
-            Posicionamento relativo à posição original. <br>
+            Posição relativa à posição original. <br>
             * top, right, bottom, left
+        </p>
+    </div>
+    <div id="absolute">
+        <h2>Absoluto</h2>
+        <p>
+            Posição relativa ao elemento pai mais próximo que possua posição diferente da padrão (static). Além disso, é removido do fluxo normal, podendo sobrepor outros elementos.
+        </p>
+    </div>
+    <div id="fixed">
+        <h2>Fixo</h2>
+        <p>
+            Posição relativa ao viewport, ou seja, continuará no mesmo lugar mesmo com scroll da página. Além disso, é removido do fluxo normal, podendo sobrepor outros elementos.
         </p>
     </div>
 </body>
