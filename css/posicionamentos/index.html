@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamentos</title>
+    <style>
+        #static {
+            background: lightsalmon;
+
+            position: static;
+
+            width: 300px;
+            margin: 10px;
+            padding: 10px;
+        }
+        #relative {
+            background: lightseagreen;
+
+            position: relative;
+            top: -20px;
+            left: 50px;
+
+            width: 300px;
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Posicionamentos</h1>
+    <div id="static">
+        <h2>Static</h2>
+        <p>
+            Posicionamento padrão dos elementos.
+        </p>
+    </div>
+    <div id="relative">
+        <h2>Relative</h2>
+        <p>
+            Posicionamento relativo à posição original. <br>
+            * top, right, bottom, left
+        </p>
+    </div>
+</body>
+</html>
