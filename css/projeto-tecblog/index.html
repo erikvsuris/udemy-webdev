@@ -12,6 +12,10 @@
         }
         body {
             font-family: Arial,Helvetica,sans-serif;
+            background: #FCF8FC;
+        }
+        .clear {
+            clear: both;
         }
         header {
             background: #FFC300;
@@ -28,15 +32,76 @@
         header nav {
             padding-top: 20px;
         }
-
-        header a:link, header a:visited {
+        header a {
+            padding: 10px 15px;
             color: white;
+            font-weight: bold;
             text-transform: uppercase;
             text-decoration: none;
         }
         header a:hover {
             color: #FFC300;
             background-color: white;
+        }
+        main {
+            margin: 0 auto;
+            width: 900px;
+        }
+        main a {
+            color: #FFC300;
+            text-decoration: none;
+        }
+        main a:hover {
+            text-decoration: underline;
+        }
+        main article {
+            float: left;
+            width: 67%;
+        }
+        main article section{
+            background: white;
+            margin-top: 20px;
+            padding: 20px;
+        }
+        main article section h2 {
+            color: #FFC300;
+        }
+        main article section h3 {
+            font-size: 0.8em;
+        }
+        main article section img {
+            width: 100%;
+            margin: 20px 0;
+        }
+        main aside {
+            float: right;
+            width: 30%;
+        }
+        main aside section {
+            background: white;
+            margin-top: 20px;
+            padding: 10px;
+        }
+        main aside h2 {
+            background: #DEDADE;
+            color: #6B6162;
+            padding: 5px;
+            font-size: 1.2em;
+        }
+        main aside .conteudo {
+            padding: 10px 0;
+        }
+        main aside nav {
+            list-style: none;
+            line-height: 20px;
+        }
+        footer {
+            background: #DEDADE;
+            margin: 20px auto;
+            padding: 20px;
+            width: 700px;
+            text-align: center;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -51,12 +116,13 @@
             <a href="">Eletrônicos</a>
         </nav>
     </header>
+    <div class="clear"></div>
     <main>
         <article>
             <section>
                 <h2>Título da postagem</h2>
                 <h3>postado em 21 de maio de 2023</h3>
-                <img src="imagens/imagem2.jpg" alt="">
+                <img src="imagens/imagem1.jpg" alt="">
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus natus ea nam ab quasi voluptatem amet minima neque delectus, inventore, porro esse modi incidunt impedit eligendi nostrum ex laudantium voluptatibus.
                 </p>
@@ -71,26 +137,45 @@
                 </p>
                 <a href="">Leia mais</a>
             </section>
+            <section>
+                <h2>Título da postagem</h2>
+                <h3>postado em 21 de maio de 2023</h3>
+                <img src="imagens/imagem3.jpg" alt="">
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit tenetur ipsam excepturi laborum, iste doloremque laboriosam possimus libero, provident repudiandae est autem quae facere vero veniam repellat quam, aspernatur ex.
+                </p>
+                <a href="">Leia mais</a>
+            </section>
         </article>
         <aside>
             <section>
                 <h2>Postagens Recentes</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                </p>
-                <a href="">Leia mais</a>
+                <div class="conteudo">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                    <a href="">Leia mais</a>
+                </div>
+                    <hr>
+                <div class="conteudo">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                    <a href="">Leia mais</a>
+                </div>
             </section>
             <section>
                 <h2>Categorias</h2>
                 <nav>
-                    <a href="">Jogos</a>
-                    <a href="">Celulares</a>
-                    <a href="">Informática</a>
-                    <a href="">Eletrônicos</a>
+                    <li><a href="">Jogos</a>
+                    <li><a href="">Celulares</a>
+                    <li><a href="">Informática</a>
+                    <li><a href="">Eletrônicos</a>
                 </nav>
             </section>
         </aside>
     </main>
+    <div class="clear"></div>
     <footer>
         <p>&copy;Todos os direitos reservados</p>
     </footer>
