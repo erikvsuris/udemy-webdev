@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Fixo</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            width: 800px;
+            font-family: "Trebuchet MS", Helvetica, sans-serif;
+        }
+        header {
+            padding: 10px 0;
+            background: #818181;
+            text-align: center;
+        }
+        .clear {
+            clear: both;
+        }
+        nav,article,aside {
+            float: left;
+        }
+        nav, aside {
+            background: #cccccc;
+        }
+        nav {
+            width: 20%;
+            padding: 20px;
+            list-style-type: none;
+        }
+        nav a {
+            text-decoration: none;
+        }
+        article {
+            width: 50%;
+            padding: 20px;
+        }
+        aside {
+            width: 30%;
+            padding: 10px;
+        }
+        footer {
+            padding: 10px;
+            background: #cccccc;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Marca</h1>
+    </header>
+    <div class="clear"></div>
+    <main>
+        <nav>
+            <li><a href="">Home</a>
+            <li><a href="">Sobre</a>
+            <li><a href="">Notícias</a>
+            <li><a href="">Produtos</a>
+            <li><a href="">Serviços</a>
+            <li><a href="">Clientes</a>
+            <li><a href="">Contato</a>
+        </nav>
+        <article>
+            <section>
+                <h2>Lorem, ipsum dolor sit amet</h2>
+                <p>
+                    Consectetur, adipisicing elit. Officiis nesciunt similique et odio totam repellendus labore modi aperiam explicabo, architecto, alias maiores nulla molestiae id nisi beatae veritatis est at?
+                </p>
+            </section>
+            <section>
+                <h2>Lorem, ipsum dolor sit amet</h2>
+                <p>
+                    Consectetur, adipisicing elit. Officiis nesciunt similique et odio totam repellendus labore modi aperiam explicabo, architecto, alias maiores nulla molestiae id nisi beatae veritatis est at?
+                </p>
+            </section>
+        </article>
+        <aside>
+            <h2>Lorem, ipsum dolor sit amet</h2>
+            <p>
+                Consectetur, adipisicing elit. Officiis nesciunt similique et odio totam repellendus labore modi aperiam explicabo.
+            </p>
+        </aside>
+    </main>
+    <div class="clear"></div>
+    <footer>
+        Rodape
+    </footer>
+</body>
+</html>
